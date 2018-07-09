@@ -1,4 +1,4 @@
-## ReactJS and Redux contact list application. Vodefone Homework
+## ReactJS and Redux contact list application. Vodafone Homework
 * This app is built with ReactJS, Redux, React Router 4, Boostrap 4 ([reactstrap](http://reactstrap.github.io/)) and SASS.
 * It uses [randomuser.me](https://randomuser.me/) API to get initial contacts.
 
