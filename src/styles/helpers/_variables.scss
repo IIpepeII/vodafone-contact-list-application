@@ -1,0 +1,30 @@
+// Import Open sans from Google fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Set font family
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+// Font sizes
+$filter-btn-font-size: 1.4rem;
+$h1-font-size: 2rem;
+
+//Colors
+$contactcard-content-color: #8f8f8f;
+$contactcard-header-bg: #191919;
+$filter-btn-font-color: #4c4c4c;
+$gray: #848484;
+$light-gray: #eee;
+$red: #e60000;
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer * 0.9),
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 6),
+  7: ($spacer * 22)
+);

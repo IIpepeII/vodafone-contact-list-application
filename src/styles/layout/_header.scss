@@ -1,0 +1,30 @@
+/*
+* Custom styles for <Footer />
+* Find it: components/Footer.js
+ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.header__logo {
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+  img {
+    height: auto;
+    width: 245px;
+    @include media-breakpoint-down(xs) {
+      display: block;
+      margin: 0 auto;
+      width: 85%;
+    }
+  }
+}
+
+.header__search {
+  @include media-breakpoint-up(lg) {
+    width: 430px;
+  }
+}

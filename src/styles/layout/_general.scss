@@ -1,0 +1,87 @@
+/* === General styles for the app === */
+
+// We need this to make sure footer is always at the bottom.
+#root,
+.site,
+body,
+html {
+  height: 100%;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+// General styles
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 600;
+  margin-bottom: 45px;
+  text-align: center;
+  &:after {
+    background: $red;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+  }
+}
+
+a {
+  color: $red;
+  transition: all .4;
+  &:hover {
+    color: darken($red,5%);
+    text-decoration: none;
+  }
+}
+
+small {
+  display: block;
+}
+
+label,
+.label-color {
+  color: $gray;
+  padding-right: 30px;
+}
+
+.error {
+  color: $red;
+}
+
+// Transiton between page changes
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: opacity 300ms ease-in;
+  width: 100%;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+// We need this to make sure the transition is seamless.
+.fade-exit.fade-exit-active {
+  left: 0;
+  opacity: 0.01;
+  position: absolute;
+  top: 0;
+  transition: opacity 300ms ease-in;
+  width: 100%;
+}
+
+.transition-group {
+  position: relative;
+}

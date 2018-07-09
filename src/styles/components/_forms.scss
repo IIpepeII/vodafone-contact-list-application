@@ -1,0 +1,5 @@
+/* === Customize Bootstrap 4 form focus === */
+.form-control:focus {
+  border-color: $red;
+  box-shadow: 0 0 0 0.2rem rgba($red,.25);
+}

@@ -1,0 +1,12 @@
+/*
+* Custom styles for <EditContactPage />
+* Find it: components/EditContactPage.js
+*/
+.edit-contact-page {
+  .form-group {
+    display: flex;
+    label {
+      width: 40%;
+    }
+  }
+}
