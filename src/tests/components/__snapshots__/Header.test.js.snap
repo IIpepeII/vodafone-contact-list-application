@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header
+  className="header container py-4"
+>
+  <div
+    className="header__logo"
+  >
+    <Link
+      replace={false}
+      to="/"
+    >
+      <img
+        alt="Vodafone"
+        src="test-file-stub"
+      />
+    </Link>
+  </div>
+  <div
+    className="header__search d-none d-sm-block"
+  >
+    <FormGroup
+      tag="div"
+    >
+      <Label
+        className="sr-only"
+        for="search"
+        tag="label"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+      >
+        Search for contact
+      </Label>
+      <Input
+        onChange={[Function]}
+        placeholder="Search for contact"
+        type="text"
+      />
+    </FormGroup>
+  </div>
+</header>
+`;

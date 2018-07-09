@@ -23,7 +23,7 @@ class ContactForm extends Component {
     getFormData: PropTypes.func.isRequired,
   }
 
-  // If form is child of <AddContactPage /> there is no contact prop.
+  // If the form is child of <AddContactPage /> there is no contact prop.
   static defaultProps = {
     contact: {
       firstName: '',
@@ -43,7 +43,7 @@ class ContactForm extends Component {
     error: false,
   }
 
-  // By onchanging form fields update local state by field name property.
+  // By changing form fields update local state by field name property.
   updateContactState = (e) => {
     const { name, value } = e.target;
     this.setState(prevState => ({

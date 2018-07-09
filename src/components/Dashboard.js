@@ -15,13 +15,19 @@ import ContactCard from './ContactCard';
 import Loading from './Loading';
 import setTextFilter from '../actions/filters';
 
-class Dashboard extends Component {
+export class Dashboard extends Component {
   static propTypes = {
-    filteredContacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-    contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-    filter: PropTypes.string.isRequired,
+    filteredContacts: PropTypes.arrayOf(PropTypes.object),
+    contacts: PropTypes.arrayOf(PropTypes.object),
+    filter: PropTypes.string,
     loading: PropTypes.bool.isRequired,
     dispatchTextFilter: PropTypes.func.isRequired,
+  }
+
+  static defaultProps = {
+    filteredContacts: [],
+    contacts: [],
+    filter: '',
   }
 
   // Method for getting individual first letters from last names for filtering
@@ -44,10 +50,12 @@ class Dashboard extends Component {
         <h1 className="text-center">Contacts</h1>
         <div className="text-center pt-3">
           {
-            this.getFirstLettersFromLastNames().map(letter => (
+            this.props.contacts.length > 0
+            && this.getFirstLettersFromLastNames().map(letter => (
               <button
                 type="button"
                 className={`text-uppercase btn--filter mx-2 ${filter === letter ? 'active' : ''}`}
+                id={`filter-${letter}`}
                 key={letter}
                 onClick={() => dispatchTextFilter(letter)}
               >

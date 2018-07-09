@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SingleContactPage correctly 1`] = `
+<div
+  className="single-contact"
+>
+  <h1>
+    1first
+     
+    1last
+    's Profile
+  </h1>
+  <div
+    className="single-contact__data px-lg-7 pb-5"
+  >
+    <p>
+      <span
+        className="label-color"
+      >
+        Name:
+      </span>
+       
+      1first
+       
+      1last
+    </p>
+    <p>
+      <span
+        className="label-color"
+      >
+        E-mail:
+      </span>
+       
+      <a
+        href="mailto:first1.last1@example.com"
+      >
+        first1.last1@example.com
+      </a>
+    </p>
+    <p>
+      <span
+        className="label-color"
+      >
+        Phone:
+      </span>
+       
+      741852
+    </p>
+  </div>
+  <div
+    className="text-center"
+  >
+    <button
+      className="btn btn--empty btn--red-empty mr-4"
+      onClick={[Function]}
+      type="button"
+    >
+      Delete
+    </button>
+    <Link
+      className="btn btn--empty btn--gray-empty"
+      replace={false}
+      to="/editcontact/111"
+    >
+      Edit
+    </Link>
+  </div>
+  <Modal
+    autoFocus={true}
+    backdrop={true}
+    backdropTransition={
+      Object {
+        "mountOnEnter": true,
+        "timeout": 150,
+      }
+    }
+    centered={false}
+    className=""
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransition={
+      Object {
+        "timeout": 300,
+      }
+    }
+    onClosed={[Function]}
+    onOpened={[Function]}
+    role="dialog"
+    toggle={[Function]}
+    zIndex={1050}
+  >
+    <ModalHeader
+      closeAriaLabel="Close"
+      tag="h5"
+      toggle={[Function]}
+      wrapTag="div"
+    >
+      Delete contact
+    </ModalHeader>
+    <ModalBody
+      tag="div"
+    >
+      Are you sure you want to delete 
+      1first
+       
+      1last
+      's Profile?
+    </ModalBody>
+    <ModalFooter
+      tag="div"
+    >
+      <Button
+        className="btn btn--empty btn--red-empty"
+        color="secondary"
+        id="delete"
+        onClick={[Function]}
+        tag="button"
+      >
+        Delete
+      </Button>
+       
+      <Button
+        className="btn btn--empty btn--gray-empty"
+        color="secondary"
+        onClick={[Function]}
+        tag="button"
+      >
+        Cancel
+      </Button>
+    </ModalFooter>
+  </Modal>
+</div>
+`;

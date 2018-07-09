@@ -5,10 +5,10 @@
 import React from 'react';
 import loader from '../images/loading.svg';
 
-const LoadingPage = () => (
+const Loading = () => (
   <div className="loading">
     <img src={loader} alt="loading..." />
   </div>
 );
 
-export default LoadingPage;
+export default Loading;

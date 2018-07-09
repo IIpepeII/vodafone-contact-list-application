@@ -11,7 +11,7 @@ import { FormGroup, Label, Input } from 'reactstrap';
 import setTextFilter from '../actions/filters';
 import logo from '../images/vodafone_logo.svg';
 
-const Header = (props) => {
+export const Header = (props) => {
   const { dispatchTextFilter } = props;
 
   return (

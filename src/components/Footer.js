@@ -7,7 +7,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const Footer = ({ history }) => (
+export const Footer = ({ history }) => (
   <footer className="footer text-center py-5">
     All Rights Reserved VSSB 2018.
     {/* On addcontact page do not display add new button */}

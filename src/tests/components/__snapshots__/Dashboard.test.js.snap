@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Dashboard correctly when contactsAreLoading is false 1`] = `
+<div
+  className="dashboard"
+>
+  <h1
+    className="text-center"
+  >
+    Contacts
+  </h1>
+  <div
+    className="text-center pt-3"
+  >
+    <button
+      className="text-uppercase btn--filter mx-2 "
+      id="filter-1"
+      key="1"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="text-uppercase btn--filter mx-2 "
+      id="filter-2"
+      key="2"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="text-uppercase btn--filter mx-2 "
+      id="filter-3"
+      key="3"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="text-uppercase btn--filter mx-2 "
+      id="filter-H"
+      key="H"
+      onClick={[Function]}
+      type="button"
+    >
+      H
+    </button>
+  </div>
+  <div
+    className="row mt-5"
+  >
+    <ContactCard
+      data={
+        Object {
+          "cell": "741852",
+          "email": "first1.last1@example.com",
+          "firstName": "1first",
+          "id": "111",
+          "lastName": "1last",
+        }
+      }
+      key="111"
+    />
+    <ContactCard
+      data={
+        Object {
+          "cell": "123456",
+          "email": "first2.last2@example.com",
+          "firstName": "2first",
+          "id": "222",
+          "lastName": "2last",
+        }
+      }
+      key="222"
+    />
+    <ContactCard
+      data={
+        Object {
+          "cell": "654321",
+          "email": "test.user3@example.com",
+          "firstName": "3first",
+          "id": "333",
+          "lastName": "3last",
+        }
+      }
+      key="333"
+    />
+    <ContactCard
+      data={
+        Object {
+          "cell": "(065)-247-9303",
+          "email": "romain.hoogmoed@example.com",
+          "firstName": "Romain",
+          "id": "04242023",
+          "lastName": "Hoogmoed",
+        }
+      }
+      key="04242023"
+    />
+  </div>
+</div>
+`;
+
+exports[`should render Dashboard correctly when contactsAreLoading is true 1`] = `
+<div
+  className="dashboard"
+>
+  <h1
+    className="text-center"
+  >
+    Contacts
+  </h1>
+  <div
+    className="text-center pt-3"
+  />
+  <div
+    className="row mt-5"
+  >
+    <Loading />
+  </div>
+</div>
+`;

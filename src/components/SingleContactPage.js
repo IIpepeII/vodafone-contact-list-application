@@ -4,7 +4,7 @@
 * - contact: actual contact data from contacts state by id in URL.
 * - dispatchDeleteContact for sending contact id to store via deleteContact action creator to delete the contact
 * - React Router history for dropping user back to dashboard after deleting the contact
-* I use Bootstrap 4 modal to confirm delete intention.
+* Bootstrap 4 modal is used to confirm delete intention.
 */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -19,7 +19,7 @@ import {
 import PropTypes from 'prop-types';
 import { deleteContact } from '../actions/contacts';
 
-class SingleContactPage extends Component {
+export class SingleContactPage extends Component {
   static propTypes = {
     contact: PropTypes.objectOf(PropTypes.string),
     dispatchDeleteContact: PropTypes.func.isRequired,
@@ -30,7 +30,7 @@ class SingleContactPage extends Component {
     contact: {},
   }
 
-  // By clicking delete button change state to true to open modal
+  // By clicking delete button change state to true in order to open modal
   state = {
     modal: false,
   }
@@ -83,6 +83,7 @@ class SingleContactPage extends Component {
             {/* By clicking delete button in modal we actually delete the contact */}
             <Button
               className="btn btn--empty btn--red-empty"
+              id="delete"
               onClick={() => {
                 this.props.dispatchDeleteContact(this.props.contact.id);
                 this.props.history.push('/');

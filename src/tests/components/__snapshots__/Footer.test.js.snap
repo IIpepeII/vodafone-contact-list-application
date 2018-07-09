@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Footer correctly if current page IS addcontact 1`] = `
+<footer
+  className="footer text-center py-5"
+>
+  All Rights Reserved VSSB 2018.
+</footer>
+`;
+
+exports[`should render Footer correctly if current page is NOT addcontact 1`] = `
+<footer
+  className="footer text-center py-5"
+>
+  All Rights Reserved VSSB 2018.
+  <Link
+    className="btn btn--red btn--rounded btn--addnew"
+    replace={false}
+    to="/addcontact"
+  >
+    +
+  </Link>
+</footer>
+`;

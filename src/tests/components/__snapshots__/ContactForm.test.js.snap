@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly on AddContactPage 1`] = `
+<Form
+  onSubmit={[Function]}
+  tag="form"
+>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="firstName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      First name:
+    </Label>
+    <Input
+      name="firstName"
+      onChange={[Function]}
+      placeholder="Enter First Name"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="lastName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      Last name:
+    </Label>
+    <Input
+      name="lastName"
+      onChange={[Function]}
+      placeholder="Enter Last Name"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="lastName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      E-mail:
+    </Label>
+    <Input
+      name="email"
+      onChange={[Function]}
+      placeholder="Enter Email"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="cell"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      Phone:
+    </Label>
+    <Input
+      name="cell"
+      onChange={[Function]}
+      placeholder="Enter Phone"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <div
+    className="text-center pt-4"
+  >
+    <Button
+      className="btn btn--empty btn--gray-empty"
+      color="secondary"
+      tag="button"
+    >
+      Add Contact
+    </Button>
+  </div>
+</Form>
+`;
+
+exports[`should render correctly on EditContactPage 1`] = `
+<Form
+  onSubmit={[Function]}
+  tag="form"
+>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="firstName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      First name:
+    </Label>
+    <Input
+      name="firstName"
+      onChange={[Function]}
+      placeholder="Enter First Name"
+      type="text"
+      value="1first"
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="lastName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      Last name:
+    </Label>
+    <Input
+      name="lastName"
+      onChange={[Function]}
+      placeholder="Enter Last Name"
+      type="text"
+      value="1last"
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="lastName"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      E-mail:
+    </Label>
+    <Input
+      name="email"
+      onChange={[Function]}
+      placeholder="Enter Email"
+      type="text"
+      value="first1.last1@example.com"
+    />
+  </FormGroup>
+  <FormGroup
+    tag="div"
+  >
+    <Label
+      for="cell"
+      tag="label"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      Phone:
+    </Label>
+    <Input
+      name="cell"
+      onChange={[Function]}
+      placeholder="Enter Phone"
+      type="text"
+      value="741852"
+    />
+  </FormGroup>
+  <div
+    className="text-center pt-4"
+  >
+    <Button
+      className="btn btn--empty btn--gray-empty"
+      color="secondary"
+      tag="button"
+    >
+      Save Contact
+    </Button>
+  </div>
+</Form>
+`;

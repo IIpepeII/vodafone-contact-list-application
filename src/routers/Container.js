@@ -31,6 +31,6 @@ const Container = ({ location }) => (
 );
 
 /*
-* Component needs to be wrappen in withRouter HOC to have access to React Router's location prop.
+* Component is wrapped in withRouter HOC to have access to React Router's location prop.
 */
 export default withRouter(Container);

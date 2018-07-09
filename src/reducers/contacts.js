@@ -3,7 +3,7 @@
 */
 
 /*
-* While contacts are fetching from the API, I set this state to true in order to display loader.
+* While contacts are fetching from the API, this state is set to true in order to display loader.
 * Default state is false.
 */
 export const contactsAreLoading = (state = false, action) => {

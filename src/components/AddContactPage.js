@@ -1,5 +1,5 @@
 /*
-* Add new contact component. I use shortid package to generate id.
+* Add new contact component. shortid package generates id.
 * The form is in ./ContactForm.js <ContactForm />
 * Props:
 * - dispatchAddContact for sending data to the store via addContact action creator.
