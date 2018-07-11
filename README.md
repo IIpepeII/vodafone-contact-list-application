@@ -1,5 +1,5 @@
 ## Vodafone SSB - ReactJS and Redux contact list application
-* This app is built with ReactJS, Redux, React Router 4, Boostrap 4 ([reactstrap](http://reactstrap.github.io/)) and SASS.
+* This app is built with ReactJS, Redux, React Router 4, Bootstrap 4 ([reactstrap](http://reactstrap.github.io/)) and SASS.
 * It uses [randomuser.me](https://randomuser.me/) API to get initial contacts.
 * Tested with Jest and Enzyme.
 
