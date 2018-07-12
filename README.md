@@ -11,3 +11,7 @@ npm run build //build production
 ```
 
 [CHECK OUT DEMO PAGE HERE](https://vodafone-homework.firebaseapp.com/)
+
+OR
+
+[CHECK OUT THE SAME APP BUILT WITH VUE + VUEX](https://github.com/jupath/vodafone-contact-list-vuejs)
